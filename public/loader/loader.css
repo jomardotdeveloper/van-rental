@@ -1,0 +1,50 @@
+.modal-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: change-back-color 6s linear infinite;
+  }
+  
+  .loader-wrapper {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader {
+    border: 15px solid rgba(0, 0, 0, 0.103);
+    border-top: 15px solid #3498db;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    animation: spin 2s linear infinite, change-color 6s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes change-color {
+    0%, 100% { border-top-color: rgba(52, 152, 219, 1); }
+    25% { border-top-color: rgba(231, 76, 60, 1); }
+    50% { border-top-color: rgba(46, 204, 113, 1); }
+    75% { border-top-color: rgba(243, 156, 18, 1); }
+  }
+
+  @keyframes change-back-color {
+    0%, 100% { background-color: rgba(52, 152, 219, 0.1); }
+  25% { background-color: rgba(231, 76, 60, 0.1); }
+  50% { background-color: rgba(46, 204, 113, 0.1); }
+  75% { background-color: rgba(243, 156, 18, 0.1); }
+  }

@@ -1,0 +1,197 @@
+:root {
+    --theme: rgb(96, 150, 186);
+}
+
+/* Changes on Login Form Interface */
+/* Version 2 changes */
+
+/* Container */
+
+.row {
+    height: 100vh;
+}
+
+/* Login Form */
+
+.login-form {
+    border: 1px solid var(--theme);
+    border-radius: 12px;
+}
+
+/* Login Form Header */
+
+.login-form-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-info > i {
+    color: var(--theme);
+    font-size: 4.8rem;
+}
+
+.form-info > span[class="h3"] {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.form-info + .close-btn {
+    justify-self: center;
+}
+
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.close-btn > i {
+    color: var(--theme);
+}
+
+/* Login Form Body */
+
+.login-form-body {
+    padding: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.user-input-container {
+    padding: 5px;
+    border: 1px solid red;
+}
+
+.mb-4 > input[type="email"], .mb-4 > input[type="password"] {
+    box-shadow: 3px 4px 7px 0px rgb(210, 210, 210);
+    width: 350px;
+}
+
+.login-btn {
+    border-radius: 200px;
+    width: 150px;
+    padding: 6px;
+}
+
+/* Media queries for Mobile */
+
+@media (min-width: 320px) {
+    .form-info > i {
+        font-size: 3.8rem;
+    }
+    
+    .form-info > span[class="h3"] {
+        font-size: 1rem;
+    }
+
+    .mb-4 > input[type="email"], .mb-4 > input[type="password"] {
+        width: 200px;
+    }
+
+    .login-btn {
+        width: 90px;
+    }
+
+    .forgot-password {
+        font-size: 0.7rem;
+    }
+
+    .register-here {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 400px) {
+    .form-info > i {
+        font-size: 4.5rem;
+    }
+    
+    .form-info > span[class="h3"] {
+        font-size: 1.2rem;
+    }
+
+    .mb-4 > input[type="email"], .mb-4 > input[type="password"] {
+        width: 270px;
+    }
+
+    .login-btn {
+        width: 110px;
+    }
+
+    .forgot-password {
+        font-size: 0.9rem;
+    }
+
+    .register-here {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 420px) {
+    .mb-4 > input[type="email"], .mb-4 > input[type="password"] {
+        width: 280px;
+    }
+
+    .login-btn {
+        width: 120px;
+    }
+
+    .forgot-password {
+        font-size: 0.9rem;
+    }
+
+    .register-here {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 450px) {
+    .mb-4 > input[type="email"], .mb-4 > input[type="password"] {
+        width: 300px;
+    }
+
+    .login-btn {
+        width: 125px;
+    }
+
+    .forgot-password {
+        font-size: 1rem;
+    }
+
+    .register-here {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 480px) {
+    .form-info > i {
+        font-size: 4.8rem;
+    }
+    
+    .form-info > span[class="h3"] {
+        font-size: 1.5rem;
+    }
+
+    .mb-4 > input[type="email"], .mb-4 > input[type="password"] {
+        width: 350px;
+    }
+
+    .login-btn {
+        width: 130px;
+    }
+}

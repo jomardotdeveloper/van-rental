@@ -1,0 +1,28 @@
+:root{
+    --primary-font:Arial, Helvetica, sans-serif;
+    --primary-color:#274C77;
+    --primary-weight:600;
+    --primary-size:1.2rem;
+
+    --secondary-size:.8rem;
+    --secondary-weight:500;
+    --theme: rgb(96, 150, 186);
+}
+
+*{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: var(--primary-font);
+    
+}
+
+body, .card{
+    background-color: rgb(228, 233, 240);
+}
+
+.header {
+    display: flex;
+    background-color: var(--theme);
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+}

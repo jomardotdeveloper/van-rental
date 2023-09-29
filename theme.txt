@@ -1,0 +1,4 @@
+--Primary color = 6096BA - header - footer
+--primary button color = 274C77
+--secondary button = 33AB63 - success
+--tertiary button = E74A4A - report

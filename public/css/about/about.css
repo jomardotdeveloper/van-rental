@@ -1,0 +1,42 @@
+:root{
+    --primary-font:Arial, Helvetica, sans-serif;
+    --primary-color:#274C77;
+    --primary-weight:600;
+    --primary-size:1.2rem;
+
+    --secondary-size:.8rem;
+    --secondary-weight:500;
+}
+*{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: var(--primary-font);
+    
+}
+body, .card{
+    background-color: rgb(228, 233, 240);
+}
+#driver-info{
+    color: var(--primary-color);
+    font-size: var(--primary-size);
+    font-weight: var(--primary-weight);
+}
+
+#name{
+    font-size: var(--secondary-size);
+    color: var(--primary-color);
+    font-weight: var(--primary-weight);
+}
+
+#content{
+    font-size: var(--primary-size);
+    color: var(--primary-color);
+    font-weight: var(--primary-weight);
+}
+#secondary{
+    font-size: var(--secondary-size);
+    font-weight: var(--primary-weight);
+}
+#secondary-content{
+    font-size: var(--primary-size);
+    font-weight: var(--primary-weight);
+}

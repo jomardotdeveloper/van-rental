@@ -96,6 +96,7 @@
                                 {{-- <div class="mb-3">
                                     <input type="text" name="otp" class="form-control" id="otp" placeholder="Enter your OTP" required>
                                 </div> --}}
+
                                 <form action="{{ route('login.otp') }}" method="post" id="otp-form">
                                     @csrf
                                     <div class="custom-popup" id="custom-popup">
@@ -120,11 +121,13 @@
                                         </div>
                                     </div>
                                 </form>
+
                             @endif
                         @endif
+                    @if(!isset($_GET['token']))
                     <form action="{{ route('login') }}" method="POST">
                         @csrf
-                        
+
                         <div class="mb-4">
                             <input type="email" name="email" class="form-control" id="email" placeholder="Email"
                                 required>
@@ -135,7 +138,7 @@
                         </div>
                         <div class="mb-4 text-center text-primary">
                             <div class="d-grid">
-                                <a class="forgot-password" href="#">Forgot Password?</a>
+                                <a id="btn-forgot" onclick="check()" class="forgot-password" >Forgot Password?</a>
                             </div>
                         </div>
                         <div class="mb-4 d-flex justify-content-center">
@@ -149,13 +152,14 @@
 
                         <div class="mb-3 text-center d-flex justify-content-center">
                             <div class="d-grid">
-                                <span class="register-here text-secondary">Don't have an account ? <a
+                                <span class="register-here text-secondary">Don't have an accounts ? <a
                                         href="{{ route('register') }}" class="text-primary "><b>Register here</b></a>
                                 </span>
                             </div>
                         </div>
 
                     </form>
+                    @endif
 
                 </div>
             </div>
@@ -165,8 +169,19 @@
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="{{ asset('assets/client/toastr/toastr.min.js') }}"></script>
+        <script>
+            function check() {
+                // var emailValue = $('#email').val();
+                //     alert(emailValue);
+                //     if (emailValue == '') {
+                //         alert("Please enter your email address");
+                //     }
+                alert("KASIMPLINE LANG");
+            }
+        </script>
     {{-- script for otp --}}
     <script>
+
         $(document).ready(function() {
             $('#custom-popup').fadeIn();
 
